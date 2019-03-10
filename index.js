@@ -25,6 +25,19 @@ class LinkedList{
 	getFirst(){
 		return this.head;
 	}
+
+	getLast(){
+		if(!this.head){
+			return null;
+		}
+		let node = this.head;
+		while(node){
+			if(!node.next){
+				return node;
+			}
+			node = node.next;
+		}
+	}
 }
 //  const nodeOne = new Node(33);
 // const list = new LinkedList();
