@@ -5,10 +5,16 @@ class Node {
 	}
 }
 
-class LinkedList {
+class LinkedList{
 	constructor(){
-		this.head = null;
-	}
+  this.head = null;
+  }
+  insertFirst(data){
+  this.head = new Node(data, this.head);
+  }
 }
+ const nodeOne = new Node(33);
+const list = new LinkedList();
+list.insertFirst(38);
+list
 
-module.exports = { Node, LinkedList };
