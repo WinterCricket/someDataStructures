@@ -7,14 +7,23 @@ class Node {
 
 class LinkedList{
 	constructor(){
-  this.head = null;
-  }
-  insertFirst(data){
-  this.head = new Node(data, this.head);
-  }
+		this.head = null;
+	}
+	insertFirst(data){
+		this.head = new Node(data, this.head);
+	}
+	size(){
+		let counter = 0;
+		let node = this.head;
+		while(node){
+			counter++;
+			node = node.next;
+		}
+		return counter;
+	}
 }
- const nodeOne = new Node(33);
-const list = new LinkedList();
-list.insertFirst(38);
-list
+//  const nodeOne = new Node(33);
+// const list = new LinkedList();
+// list.insertFirst(38);
+// list
 
