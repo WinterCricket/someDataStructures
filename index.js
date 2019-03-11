@@ -42,9 +42,72 @@ class LinkedList{
 	clear(){
 		this.head = null;
 	}
+
+	emoveFirst(){
+		this.head = this.head.next;
+	}
+
 }
 //  const nodeOne = new Node(33);
 // const list = new LinkedList();
 // list.insertFirst(38);
 // list
 
+// Data structure tests for Playground runs
+
+// class Node {
+// 	constructor(data, next = null){
+// 		this.data = data;
+// 		this.next = next;
+// 	}
+// }
+
+// class LinkedList {
+// 	constructor(){
+// 		this.head = null;
+// 	}
+// 	insertFirst(data){
+// 		this.head = new Node(data, this.head);
+// 	}
+
+// 	size(){
+// 		let counter = 0;
+// 		let node = this.head;
+// 		while(node){
+// 			counter++;
+// 			node = node.next;
+// 		}
+// 		return counter;
+// 	}
+
+// 	getFirst(){
+// 		return this.head;
+// 	}
+
+// 	getLast(){
+// 		if(!this.head){
+// 			return null;
+// 		}
+// 		let node = this.head;
+// 		while(node){
+// 			if(!node.next){
+// 				return node;
+// 			}
+// 			node = node.next;
+// 		}
+// 	}
+
+// 	clear(){
+// 		this.head = null;
+// 	}
+// }
+
+
+//     const l = new LinkedList();
+    
+//     l.insertFirst(1);
+//     l.insertFirst(2);
+//     l.insertFirst(3);
+//     l.insertFirst(4);
+//     l
+//     l.getFirst()
