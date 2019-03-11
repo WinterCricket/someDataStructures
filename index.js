@@ -43,7 +43,7 @@ class LinkedList{
 		this.head = null;
 	}
 
-	emoveFirst(){
+	removeFirst(){
 		this.head = this.head.next;
 	}
 
@@ -110,4 +110,5 @@ class LinkedList{
 //     l.insertFirst(3);
 //     l.insertFirst(4);
 //     l
-//     l.getFirst()
+//     l.getFirst();
+//	   l.removeFirst();
