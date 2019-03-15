@@ -98,8 +98,13 @@ class LinkedList{
 			this.head = this.head.next;
 			return;
 		}
+		
 		const previous = this.getAt(index - 1);
+		if(!previous || !previous.next){
+			return;
+		}
 		previous.next = previous.next.next;
+
 	}
 
 }
